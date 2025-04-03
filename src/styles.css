@@ -1,0 +1,140 @@
+/* styles.css */
+
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #2c2c2c, #3d3d3d);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* APP CONTAINER */
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #00c2ff;
+}
+.header .tagline {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #a7a7a7;
+}
+
+/* TABS NAVIGATION */
+.tabNavigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  gap: 10px;
+}
+.tabButton {
+  background: #4d4d4d;
+  color: #fff;
+  border: 1px solid #666;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+.tabButton:hover {
+  background: #616161;
+}
+.tabButton.active {
+  background: linear-gradient(45deg, #00f0ff, #008eff);
+  color: #000;
+  font-weight: bold;
+  border: none;
+}
+
+/* MAIN CONTENT */
+.contentArea {
+  background: #2b2b2b;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 400px;
+}
+.contentArea section {
+  margin-bottom: 1rem;
+}
+
+/* BLOCKQUOTE FOR EMAIL SNIPPETS */
+.emailSnippet {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #00c2ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* RESEARCH POINTS */
+.researchPoints {
+  list-style: disc inside;
+  margin-left: 1rem;
+  line-height: 1.5;
+}
+.researchPoints li {
+  margin-bottom: 0.6rem;
+}
+
+/* BIO HEADING */
+.bioHeading {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #00c2ff;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #999999;
+}
+
+/* RESPONSIVE (MOBILE) */
+@media screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+  .tabButton {
+    flex: 1 0 auto;
+  }
+  .contentArea {
+    padding: 0.8rem;
+  }
+  .bioHeading {
+    font-size: 1.3rem;
+  }
+}
+.bioList {
+  list-style: disc inside;
+  margin-left: 1rem;
+  line-height: 1.5;
+}
+.bioList li {
+  margin-bottom: 0.6rem;
+}
