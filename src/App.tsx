@@ -258,8 +258,7 @@ function App() {
                 the 2019 harvest
               </li>
               <li>
-                Skilled in facility design, grow programs, IPM (Integrated Pest
-                Management), genetic development, and cultural practices
+                Skilled in facility design, grow programs, genetic development, and cultural practices
               </li>
             </ul>
           </section>
